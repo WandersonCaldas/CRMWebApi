@@ -10,12 +10,13 @@ namespace CRMWeb.Api.Mappings
         public CRMProfile() 
         {
             CreateMap<ClienteRequest, Cliente>();
-
             CreateMap<Cliente, ClienteResponse>();
 
             CreateMap<EnderecoRequest, Endereco>();
-
             CreateMap<Endereco, EnderecoResponse>();
+
+            CreateMap<ContatoRequest, Contato>();
+            CreateMap<Contato, ContatoResponse>();
         }
     }
 }

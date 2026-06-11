@@ -45,5 +45,10 @@ public class ClienteConfiguration : IEntityTypeConfiguration<Cliente>
 
         builder.HasIndex(x => x.CpfCnpj)
             .IsUnique();
+
+        builder.HasMany(x => x.Contatos)
+            .WithOne(x => x.Cliente)
+            .HasForeignKey(x => x.ClienteId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

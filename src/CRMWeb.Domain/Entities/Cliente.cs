@@ -21,4 +21,5 @@ public class Cliente
     public bool Ativo { get; set; }
 
     public ICollection<Endereco> Enderecos { get; set; } = [];
+    public ICollection<Contato> Contatos { get; set; } = [];
 }
