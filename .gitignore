@@ -1,0 +1,9 @@
+/src/.vs
+/src/CRMWeb.Api/appsettings.Development.json
+/src/CRMWeb.Api/CRMWeb.Api.csproj.user
+/src/CRMWeb.Api/obj
+/src/CRMWeb.Api/bin/Debug
+/src/CRMWeb.Domain/obj
+/src/CRMWeb.Domain/bin/Debug
+/src/CRMWeb.Infrastructure/obj
+/src/CRMWeb.Infrastructure/bin/Debug
