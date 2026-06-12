@@ -14,6 +14,7 @@ namespace CRMWeb.Infrastructure.Data
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Contato> Contatos { get; set; }
         public DbSet<Tarefa> Tarefas { get; set; }
+        public DbSet<Agenda> Agendas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

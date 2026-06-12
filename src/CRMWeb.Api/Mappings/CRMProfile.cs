@@ -20,6 +20,9 @@ namespace CRMWeb.Api.Mappings
 
             CreateMap<TarefaRequest, Tarefa>();
             CreateMap<Tarefa, TarefaResponse>();
+
+            CreateMap<AgendaRequest, Agenda>();
+            CreateMap<Agenda, AgendaResponse>();
         }
     }
 }

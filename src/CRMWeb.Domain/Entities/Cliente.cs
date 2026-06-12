@@ -23,4 +23,5 @@ public class Cliente
     public ICollection<Endereco> Enderecos { get; set; } = [];
     public ICollection<Contato> Contatos { get; set; } = [];
     public ICollection<Tarefa> Tarefas { get; set; } = [];
+    public ICollection<Agenda> Agendas { get; set; } = [];
 }

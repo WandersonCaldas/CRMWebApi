@@ -20,4 +20,5 @@ public class Contato
 
     public Cliente Cliente { get; set; } = null!;
     public ICollection<Tarefa> Tarefas { get; set; } = [];
+    public ICollection<Agenda> Agendas { get; set; } = [];
 }
