@@ -83,6 +83,7 @@ Relacionamentos:
 * 1:N Endereços
 * 1:N Contatos
 * 1:N Tarefas
+* 1:N Agendas
 
 ---
 
@@ -120,9 +121,11 @@ Campos principais:
 * Principal
 * Ativo
 
-Relacionamento:
+Relacionamentos:
 
 * N:1 Cliente
+* 1:N Tarefas
+* 1:N Agendas
 
 ---
 
@@ -137,6 +140,26 @@ Campos principais:
 * DataVencimento
 * Concluida
 * DataConclusao
+* Ativo
+
+Relacionamentos:
+
+* N:1 Cliente
+* N:1 Contato (opcional)
+
+---
+
+### Agenda
+
+Representa compromissos, reuniões, visitas e eventos relacionados a clientes e contatos.
+
+Campos principais:
+
+* Título
+* Descrição
+* DataInicio
+* DataFim
+* DiaTodo
 * Ativo
 
 Relacionamentos:
@@ -219,6 +242,18 @@ PATCH  /tarefas/{id}/reabrir
 DELETE /tarefas/{id}
 ```
 
+---
+
+### Agendas
+
+```http
+POST   /agendas
+GET    /agendas
+GET    /agendas/{id}
+PUT    /agendas/{id}
+DELETE /agendas/{id}
+```
+
 ## Migrations
 
 Criar migration:
@@ -245,3 +280,18 @@ Este projeto tem como objetivo servir como ambiente de estudo para:
 * Relacionamentos entre entidades
 * Desenvolvimento de APIs REST
 * Boas práticas de modelagem de dados
+* Organização de tarefas e compromissos
+* Gerenciamento de agenda corporativa
+
+## Funcionalidades Implementadas
+
+* Cadastro de clientes
+* Cadastro de endereços
+* Cadastro de contatos
+* Controle de tarefas
+* Controle de agenda
+* Relacionamentos entre entidades
+* Persistência com Entity Framework Core
+* Migrations automatizadas
+* Documentação Swagger
+* Mapeamento com AutoMapper
