@@ -17,6 +17,9 @@ namespace CRMWeb.Api.Mappings
 
             CreateMap<ContatoRequest, Contato>();
             CreateMap<Contato, ContatoResponse>();
+
+            CreateMap<TarefaRequest, Tarefa>();
+            CreateMap<Tarefa, TarefaResponse>();
         }
     }
 }

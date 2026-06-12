@@ -19,4 +19,5 @@ public class Contato
     public bool Ativo { get; set; }
 
     public Cliente Cliente { get; set; } = null!;
+    public ICollection<Tarefa> Tarefas { get; set; } = [];
 }
